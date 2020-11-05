@@ -9,3 +9,26 @@ export const MapContainer = styled.View`
     justify-content: flex-end;
     align-items: center;
 `;
+
+export const MapMarkerOutside = styled.View`
+    position: relative;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #888;
+    opacity: 0.2;
+`;
+
+export const MapMarkerInside = styled.View`
+    position: absolute;
+    border-radius: 13px;
+    width: 25px;
+    height: 25px;
+    
+    top: 50%;
+    left: 50%;
+    margin: -12.5px 0 0 -12.5px;
+    z-index: 10;
+    
+    background-color: lightgreen;
+`;
